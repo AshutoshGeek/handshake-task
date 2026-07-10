@@ -1,0 +1,50 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 3,
+            "passed": 2,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1783683306.2832491,
+            "stop": 1783683306.3043249
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_total_requests",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0011041249999994562,
+                "start": 1783683306.2956707,
+                "stop": 1783683306.3022537,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_total_requests():\n        \"\"\"Success criterion 1: report.json contains total_requests equal to the number of log lines.\"\"\"\n>       assert _load()[\"total_requests\"] == 6\nE       assert 106 == 6\n\n/tests/test_outputs.py:13: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_unique_ips",
+                "status": "passed",
+                "duration": 0.0006810420000009643,
+                "start": 1783683306.3024023,
+                "stop": 1783683306.30335,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_top_path",
+                "status": "passed",
+                "duration": 0.0004167909999992503,
+                "start": 1783683306.3034997,
+                "stop": 1783683306.3040404,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}
